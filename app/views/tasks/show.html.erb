@@ -1,0 +1,16 @@
+<div class="container">
+  <h1>Task Created / Updated </h1>
+  <h2><%= @task.title %></h2>
+  <p><%= @task.details %></p>
+  <p><%= @task.completed%></p>
+
+  <%= link_to "Return to main page", tasks_path %>
+  <%= link_to "Edit task", task_edit_path %>
+  <%= link_to "Create task", task_create_path %>
+
+  <%# to delete %>
+  <%= link_to "Delete",
+  task_path(@task),
+  data: {turbo_method: :delete, turbo_confirm: "Task cleared?"}
+  %>
+</div>

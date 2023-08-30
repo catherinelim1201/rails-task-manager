@@ -1,0 +1,15 @@
+<div class="container">
+  <div class="banner">
+
+  <h1>Display Tasks</h1>
+  <hr>
+    <ul>
+      <% @tasks.each do |task| %>
+        <li><%= link_to task.title, task_path(task) %></li>
+      <% end %>
+    </ul>
+
+  <%= link_to "Create Task", task_create_path %>
+
+  </div>
+</div>

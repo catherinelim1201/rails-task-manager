@@ -1,0 +1,26 @@
+<div class="container">
+
+<h1>Edit Task</h1>
+
+  <%= render 'form', task: @task %>
+
+  <% end %>
+
+  <%= link_to "Back to Main Page", tasks_path %>
+  <%= link_to "Create a task", task_create_path %>
+
+</div>
+
+
+<%# <%= form_with model: @task do |f| %>
+      <%# <%= f.label :title %>
+      <%# <%= f.text_field :title %>
+
+      <%# <%= f.label :detail %>
+      <%# <%= f.text_field :detail %>
+
+      <%# <%= f.label :completed %>
+      <%# <%= f.text_field :completed %>
+
+      <%# <%= f.submit %>
+    <%# <% end %>

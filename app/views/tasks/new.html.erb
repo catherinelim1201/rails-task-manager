@@ -1,0 +1,24 @@
+<div class="container">
+  <h1>Create a Task</h1>
+  <div>
+    <%= render 'form', task: @task %>
+    <%= link_to "Create a new task", tasks_path %>
+  </div>
+</div>
+
+
+<%# Task.create(title: "Studying", details: "A lot of flashcards to do", completed: true) %>
+
+
+    <%# <%= form_with model: @task do |f| %>
+      <%# <%= f.label :title %>
+      <%# <%= f.text_field :title %>
+
+      <%# <%= f.label :detail %>
+      <%# <%= f.text_field :detail %>
+
+      <%# <%= f.label :completed %>
+      <%# <%= f.text_field :completed %>
+
+      <%# <%= f.submit %>
+    <%# <% end %>
